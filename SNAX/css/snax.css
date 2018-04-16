@@ -1,0 +1,71 @@
+.container {
+    padding-top: 5%;
+    justify-content: center;
+}
+
+.row-centered {
+    display: flex;
+    justify-content: center;
+    float: none;
+} 
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.logo {
+    height:120px;
+    display: block;
+    margin: auto;
+}
+
+#main {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: avenir-heavy;
+    font-size: 2em;
+    color: #ffc5ce;
+}
+
+p {
+    font-family: avenir;
+}
+
+h2::selection {
+    background-color: #ffc5ce;
+    color: white;
+}
+
+p::selection {
+    background-color: #ffc5ce;
+}
+
+button::selection {
+    background-color: #ffc5ce;
+}
+
+button {
+    font-family: avenir;
+    font-size: 1em;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #fbba7b;
+    border-radius: 10px;
+    padding: 10px;
+    color:#fbba7b;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #fbba7b;
+    color: white;
+}
+
+#buttons {
+    text-align: center;
+}
