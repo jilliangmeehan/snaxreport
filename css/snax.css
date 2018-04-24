@@ -45,6 +45,10 @@ p::selection {
     background-color: #ffc5ce;
 }
 
+.gummies {
+    height:120px;
+}
+
 button::selection {
     background-color: #ffc5ce;
 }
