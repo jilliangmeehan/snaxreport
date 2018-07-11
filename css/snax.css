@@ -1,83 +1,82 @@
-.container {
-    padding-top: 5%;
-    justify-content: center;
+html {
+    background: linear-gradient(rgba(0, 217, 218, 0.5) 0%, rgba(255, 197, 206, 0.5) 50%, rgba(251, 186, 123, 0.5) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: auto;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.row-centered {
-    display: flex;
-    justify-content: center;
-    float: none;
-} 
-
-.col-centered {
-    float: none;
-    margin: 0 auto;
+.container {
+    margin-top: 5%;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding: 5%;
+    background-color: white;
+    text-align: center;
 }
 
 .logo {
-    height:120px;
+    height:110px;
     display: block;
     margin: auto;
 }
 
-#main {
-    display: block;
-    text-align: center;
-    justify-content: center;
+a {
+    text-decoration: none;
 }
 
-h2 {
+a:hover {
+    text-decoration: underline;
+}
+
+.teal, .teal:hover {
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 22px;
+    color: #00D9DA;
     -webkit-font-smoothing: antialiased;
-    color: #ffc5ce;
 }
 
-p {
+.pink, .pink:hover {
     font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffc5ce;
     -webkit-font-smoothing: antialiased;
 }
 
-h2::selection {
-    background-color: #ffc5ce;
-    color: white;
+.orange, .orange:hover {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fbba7b;
+    -webkit-font-smoothing: antialiased;
 }
 
-p::selection {
-    background-color: #ffc5ce;
+.hero {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    margin: auto;
+    padding-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.links {
+    max-width: 400px;
+    padding-top: 18px;
+    margin: auto;
 }
 
 .gummies {
     height:120px;
-}
-
-.gumroad-button {
-    font-family: 'Karla', sans-serif;
-}
-
-button::selection {
-    background-color: #ffc5ce;
-}
-
-button {
-    font-family: 'Karla', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    background-color: #ffffff;
-    border: 2px solid #fbba7b;
-    border-radius: 10px;
-    padding: 10px;
-    color:#fbba7b;
-    transition-duration: 0.4s;
-    -webkit-font-smoothing: antialiased;
-}
-
-button:hover {
-    background-color: #fbba7b;
-    color: white;
-}
-
-#buttons {
-    text-align: center;
 }
