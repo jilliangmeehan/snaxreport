@@ -8,9 +8,7 @@ html {
 }
 
 .container {
-    margin-top: 5%;
-    margin-right: 7%;
-    margin-left: 7%;
+    margin: 7%;
     padding: 5%;
     background-color: white;
     text-align: center;
@@ -79,4 +77,5 @@ a:hover {
 
 .gummies {
     height:120px;
+    padding-bottom: 10px;
 }
