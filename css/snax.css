@@ -1,10 +1,9 @@
 html {
     background: linear-gradient(rgba(0, 217, 218, 0.5) 0%, rgba(255, 197, 206, 0.5) 50%, rgba(251, 186, 123, 0.5) 100%);
     background-repeat: no-repeat;
-    height: 100%;
+    min-height: 100%;
     margin: auto;
     background-size: cover;
-    overflow: hidden;
 }
 
 .container {
