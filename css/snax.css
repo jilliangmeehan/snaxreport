@@ -4,13 +4,16 @@ html {
     min-height: 100%;
     margin: auto;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    margin: 7%;
-    padding: 5%;
     background-color: white;
     text-align: center;
+    margin: 5%;
+    padding: 5%;
 }
 
 .logo {
