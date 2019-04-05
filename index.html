@@ -23,17 +23,23 @@
         <link rel="stylesheet" href="css/snax.css" type="text/css">
         
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Karla');
+            @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
         </style>
         
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79715615-2"></script>
+        <!-- Fathom analytics-->
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-79715615-2');
-        </script>
+          (function(f, a, t, h, o, m){
+          a[h]=a[h]||function(){
+              (a[h].q=a[h].q||[]).push(arguments)
+          };
+          o=f.createElement('script'),
+          m=f.getElementsByTagName('script')[0];
+          o.async=1; o.src=t; o.id='fathom-script';
+          m.parentNode.insertBefore(o,m)
+          })(document, window, '//cdn.usefathom.com/tracker.js', 'fathom');
+          fathom('set', 'siteId', 'ZDKRUBDF');
+          fathom('trackPageview');
+          </script>
         
     </head>
     <body>
@@ -43,25 +49,10 @@
                 onmouseover="this.src='assets/logo/logo_pink.png';"
                 onmouseout="this.src='assets/logo/logo_teal.png';"> 
             </header>
-
-            <p class="hero">SNAX is a zine-in-progress about all things snacks. We want to make and share art that celebrates &amp; explores one of our favorite universal experiences: snacking.</p>
-
-            <div class="links">
-                <a class="teal" href="https://gumroad.com/l/snax-bite-sized">Get SNAX: Bite-Sized</a>
-                <p class="text">While we're working hard to complete our first print issue, check out a bite-sized teaser of what's to come.</p>
-                <a class="pink" href="https://snaxreport.typeform.com/to/uGMHK1" data-mode="popup" data-submit-close-delay="5" target="_blank">Slack with us</a>
-                <p class="text">Join us on Slack to chat about what we're snacking on.</p>          
-                <a class="orange" href="https://snaxreport.typeform.com/to/Tc77A3" data-mode="popup" data-submit-close-delay="5" target="_blank">Wanna contribute?</a> 
-                <p class="text">We welcome work of any kind.</p>
-                <a class="teal" href="https://instagram.com/snaxreport">#snaxreport</a>
-                <p class="text">Follow us on Instagram for more SNAX content!</p>
-            </div>
-
-            <img class="gummies" src="assets/art/gummiebrahs.png">
-            
-            
+            <nav>
+              <a class="pink" href="https://gumroad.com/l/snax-bite-sized">get the teaser</a>
+              <a class="orange" href="https://instagram.com/snaxreport">#snaxreport</a>
+          </nav>
         </div>
-
     </body>
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 </html>
