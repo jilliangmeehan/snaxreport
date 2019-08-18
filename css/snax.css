@@ -14,6 +14,7 @@ html {
 
 p {
   font-family: "Karla";
+  font-weight: 700;
   display: inline;
   font-size: 160px;
   line-height: 80%;
