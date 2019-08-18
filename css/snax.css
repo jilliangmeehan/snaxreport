@@ -1,68 +1,60 @@
 html {
-  background: linear-gradient(rgba(0, 217, 218, 0.5) 0%, rgba(255, 197, 206, 0.5) 50%, rgba(251, 186, 123, 0.5) 100%);
-  background-repeat: no-repeat;
-  min-height: 100%;
-  margin: auto;
-  background-size: cover;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-body {
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  -webkit-font-smoothing: antialiased;
-}
-
-nav {
+.flex {
   display: flex;
   flex-direction: column;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 50px;
-  padding: 15px 30px 15px 30px;
-  margin: 0.5rem;
-  transition: 0.1s linear;
-}
-
-.container {
-  text-align: center;
-}
-
-.logo {
-  max-width: 300px;
   margin: auto;
 }
 
-.pink {
-  background-color: #FFC5CE;
+p {
+  font-family: "Karla";
+  display: inline;
+  font-size: 160px;
+  line-height: 80%;
 }
 
-.pink:hover {
-  background-color: #FFD3DA;
+.s {
+  color: #00D9DA;
+  animation:blinkingTeal 4s infinite;
 }
 
-.orange{
-  background-color: #FBBA7B;
+.n {
+  color: #FFC5CE;
+  animation:blinkingPink 4s infinite 1s;
 }
 
-.orange:hover {
-  background-color: #FFD2A7;
+.a {
+  color: #FBBA7B;
+  animation:blinkingOrange 4s infinite 2s;
 }
 
-@media screen and (min-width: 500px) {
-  .logo { max-width: 500px; }
-  
-  nav {
-    flex-direction: row;
-    justify-content: center;
-  }
+.x {
+  color: #00D9DA;
+  animation:blinkingTeal 4s infinite 3s;
+  font-family: Lora;
+  font-style: italic;
+}
 
-  a { margin: 1rem; }
+@keyframes blinkingTeal{
+    0%{     color: #00D9DA;    }
+    35%{    color: transparent; }
+    65%{   color: #00D9DA;    }
+}
+
+@keyframes blinkingPink{
+    0%{     color: #FFC5CE;    }
+    35%{    color: transparent; }
+    65%{   color: #FFC5CE;    }
+}
+
+@keyframes blinkingOrange{
+    0%{     color: #FBBA7B;    }
+    35%{    color: transparent; }
+    65%{   color: #FBBA7B;    }
 }
