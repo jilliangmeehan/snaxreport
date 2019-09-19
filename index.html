@@ -1,65 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>SNAX</title>
+---
+layout: home
+---
 
-        <!-- Meta -->
-        <meta name="description" content="SNAX is a zine about snacks.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Social cards -->
-        <meta property="og:title" content="SNAX">
-        <meta property="og:description" content="A zine about snacks.">
-        <meta property="og:image" content="http://snaxreport.com/assets/art/gummiebrahs.png">
-        <meta property="og:url" content="http://snaxreport.com">
-        <meta name="twitter:title" content="SNAX">
-        <meta name="twitter:description" content="A zine about snacks.">
-        <meta name="twitter:image" content="http://snaxreport.com/assets/art/gummiebrahs.png">
-        <meta name="twitter:card" content="summary_large_image">
-
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-        <link rel="stylesheet" href="css/snax.css" type="text/css">
-
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Lora:400i&display=swap');
-        </style>
-
-        <!-- Fathom analytics-->
-        <script>
-          (function(f, a, t, h, o, m){
-          a[h]=a[h]||function(){
-              (a[h].q=a[h].q||[]).push(arguments)
-          };
-          o=f.createElement('script'),
-          m=f.getElementsByTagName('script')[0];
-          o.async=1; o.src=t; o.id='fathom-script';
-          m.parentNode.insertBefore(o,m)
-          })(document, window, '//cdn.usefathom.com/tracker.js', 'fathom');
-          fathom('set', 'siteId', 'ZDKRUBDF');
-          fathom('trackPageview');
-          </script>
-
-    </head>
-    <body>
-      <div class="flex">
-      <div class="row">
-          <p class="s">
-            s
-          </p>
-          <p class="n">
-            n
-          </p>
-        </div>
-      <div class="row">
-          <p class="a">
-            a
-          </p>
-          <p class="x">
-            x
-          </p>
-        </div>
+<div class="flex">
+  <div class="section1">
+    <img src="/assets/images/issueone.gif">
+  </div>
+  <div class="section2">
+    <div class="description">
+      {% include products/issueone.html %}
     </div>
-    </body>
-</html>
+    <div class="button">
+      {% include shopify.html %}
+    </div>
+  </div>
+</div>

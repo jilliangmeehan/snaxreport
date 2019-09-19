@@ -1,0 +1,55 @@
+// Text
+
+header {
+
+  p {
+    font-family: "Karla";
+    font-weight: 700;
+    display: inline;
+    font-size: 42px;
+    line-height: 60%;
+
+    &.s {
+      color: $teal;
+      animation:blinkingTeal 4s infinite;
+    }
+
+    &.n {
+      color: $pink;
+      animation:blinkingPink 4s infinite 1s;
+    }
+
+    &.a {
+      color: $orange;
+      animation:blinkingOrange 4s infinite 2s;
+    }
+
+    &.x {
+      color: $teal;
+      animation:blinkingTeal 4s infinite 3s;
+      font-family: $serif;
+      font-weight: $default;
+      font-style: italic;
+    }
+  }
+}
+
+// Animation
+
+@keyframes blinkingTeal{
+    0%{     color: $teal;    }
+    35%{    color: transparent; }
+    65%{   color: $teal;    }
+}
+
+@keyframes blinkingPink{
+    0%{     color: $pink;    }
+    35%{    color: transparent; }
+    65%{   color: $pink;    }
+}
+
+@keyframes blinkingOrange{
+    0%{     color: $orange;    }
+    35%{    color: transparent; }
+    65%{   color: $orange;    }
+}

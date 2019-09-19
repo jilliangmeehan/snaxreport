@@ -1,0 +1,41 @@
+body { padding: 0; margin: 0; -webkit-font-smoothing: antialiased; }
+
+.flex { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.flex.logo { flex-direction: column; position: fixed; top: 0px; right: 0px; padding: 2%; }
+
+.section1 { width: 100%; }
+
+.section2 { width: 100%; }
+
+.description { font-family: "Karla", sans-serif; font-weight: 400; font-size: 18px; padding: 5% 5% 0 5%; }
+
+.bolditalic { font-family: "Lora", serif; font-weight: 700; font-style: italic; }
+
+.medium { font-weight: 700; font-size: 28px; }
+
+.button { padding: 0 0 5% 5%; }
+
+a { text-decoration: none; color: #FFC5CE; font-weight: 700; }
+a:hover { color: #FBBA7B; }
+
+img { width: 100%; height: 100vh; object-fit: cover; }
+
+@media screen and (min-width: 750px) { .flex { flex-direction: row; }
+  .section1 { width: 40%; }
+  .section2 { width: 60%; }
+  .description { max-width: 350px; } }
+header p { font-family: "Karla"; font-weight: 700; display: inline; font-size: 42px; line-height: 60%; }
+header p.s { color: #00D9DA; animation: blinkingTeal 4s infinite; }
+header p.n { color: #FFC5CE; animation: blinkingPink 4s infinite 1s; }
+header p.a { color: #FBBA7B; animation: blinkingOrange 4s infinite 2s; }
+header p.x { color: #00D9DA; animation: blinkingTeal 4s infinite 3s; font-family: "Lora", serif; font-weight: 400; font-style: italic; }
+
+@keyframes blinkingTeal { 0% { color: #00D9DA; }
+  35% { color: transparent; }
+  65% { color: #00D9DA; } }
+@keyframes blinkingPink { 0% { color: #FFC5CE; }
+  35% { color: transparent; }
+  65% { color: #FFC5CE; } }
+@keyframes blinkingOrange { 0% { color: #FBBA7B; }
+  35% { color: transparent; }
+  65% { color: #FBBA7B; } }

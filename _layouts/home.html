@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <meta description={{ page.description }}>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include social.html %}
+    {% include favicon.html %}
+    {% include fathom.html %}
+
+
+    <link rel="stylesheet" href="assets/css/shared.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:400i,700i&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      {% include header.html %}
+    </header>
+    {{ content }}
+  </body>
+</html>
