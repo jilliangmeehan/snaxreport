@@ -1,5 +1,15 @@
 body { padding: 0; margin: 0; -webkit-font-smoothing: antialiased; }
 
+nav { margin: 4%; font-family: "Karla", sans-serif; font-weight: 700; }
+nav a { margin: 0 2%; }
+nav a.selected-teal { color: #00D9DA; }
+nav a.selected-orange { color: #FBBA7B; }
+
+.container { margin: 20% 12%; padding-bottom: 5%; }
+.container p { font-style: italic; }
+.container p.about { font-family: "Lora", serif; font-size: 36px; }
+.container p.contact { font-family: "Karla", sans-serif; font-size: 18px; }
+
 .flex { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .flex.logo { flex-direction: column; position: fixed; top: 0px; right: 0px; padding: 2%; }
 
@@ -13,17 +23,32 @@ body { padding: 0; margin: 0; -webkit-font-smoothing: antialiased; }
 
 .medium { font-weight: 700; font-size: 28px; }
 
-.button { padding: 0 0 5% 5%; }
+.button { padding: 0 0 15% 5%; }
 
-a { text-decoration: none; color: #FFC5CE; font-weight: 700; }
+.teal { color: #00D9DA; }
+
+.pink { color: #FFC5CE; }
+
+.orange { color: #FBBA7B; }
+
+a { text-decoration: none; color: #FFC5CE; font-weight: 700; transition: 0.1s linear; }
 a:hover { color: #FBBA7B; }
+a.teal { color: black; }
+a.teal:hover { color: #00D9DA; }
+a.pink { color: black; }
+a.pink:hover { color: #FFC5CE; }
+a.orange { color: black; }
+a.orange:hover { color: #FBBA7B; }
 
 img { width: 100%; height: 100vh; object-fit: cover; }
 
-@media screen and (min-width: 750px) { .flex { flex-direction: row; }
+@media screen and (min-width: 750px) { .container { margin: 6% 12%; }
+  .container p.about { font-size: 72px; }
+  .flex { flex-direction: row; }
   .section1 { width: 40%; }
   .section2 { width: 60%; }
-  .description { max-width: 350px; } }
+  .description { max-width: 350px; }
+  .button { padding: 0 0 5% 5%; } }
 header p { font-family: "Karla"; font-weight: 700; display: inline; font-size: 42px; line-height: 60%; }
 header p.s { color: #00D9DA; animation: blinkingTeal 4s infinite; }
 header p.n { color: #FFC5CE; animation: blinkingPink 4s infinite 1s; }
