@@ -8,6 +8,7 @@ nav a.selected-orange { color: #FBBA7B; }
 .container { margin: 20% 12%; padding-bottom: 5%; }
 .container p { font-style: italic; }
 .container p.about { font-family: "Lora", serif; font-size: 36px; }
+.container p.stockists { font-family: "Karla", sans-serif; font-size: 18px; }
 .container p.contact { font-family: "Karla", sans-serif; font-size: 18px; }
 
 .flex { display: flex; flex-direction: column; justify-content: center; align-items: center; }
