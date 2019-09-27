@@ -8,8 +8,8 @@ nav a.selected-orange { color: #FBBA7B; }
 .container { margin: 20% 12%; padding-bottom: 5%; }
 .container p { font-style: italic; }
 .container p.about { font-family: "Lora", serif; font-size: 36px; }
-.container p.stockists { font-family: "Karla", sans-serif; font-size: 18px; }
-.container p.contact { font-family: "Karla", sans-serif; font-size: 18px; }
+.container p.stockists { font-family: "Karla", sans-serif; font-size: 14px; }
+.container p.contact { font-family: "Karla", sans-serif; font-size: 14px; }
 
 .flex { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .flex.logo { flex-direction: column; position: fixed; top: 0px; right: 0px; padding: 2%; }
