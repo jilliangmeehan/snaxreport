@@ -1,0 +1,9 @@
+- name: SNAX Issue One
+  img: assets/images/issueone_square.JPG
+  price: $20
+  url: /issueone
+
+- name: SNAX Issue One PDF
+  img: assets/images/i1pdf_square.png
+  price: $10
+  url: /pdf

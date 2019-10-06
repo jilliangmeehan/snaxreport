@@ -1,0 +1,23 @@
+---
+layout: default
+title: SNAX | Shop
+permalink: /shop
+---
+
+<nav>
+  <a class="teal" href="/">about</a>
+  <a class="orange selected-orange" href="/shop">shop</a>
+</nav>
+
+<div class="container">
+  <div class="flex shop">
+    {% for product in site.data.products %}
+        <div class="product">
+          <a href="{{ product.url }}">
+          <img src="{{ product.img }}">
+          <p>{{ product.name }} ∙ {{ product.price }}</p>
+          </a>
+        </div>
+    {% endfor %}
+  </div>
+</div>

@@ -53,6 +53,30 @@ nav {
     right: 0px;
     padding: 2%;
   }
+
+  &.shop {
+    .product {
+      padding: 5%;
+
+      img {
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: contain;
+      }
+
+      p {
+        color: black;
+        font-family: $sans-serif;
+        font-style: normal;
+        text-align: center;
+        transition: 0.1s linear;
+      }
+
+      &:hover {
+        p { color: $pink; }
+      }
+    }
+  }
 }
 
 .section1 { width: 100%; }
