@@ -56,11 +56,11 @@ nav {
 
   &.shop {
     .product {
-      padding: 2%;
+      padding: 5%;
 
       img {
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 350px;
+        max-height: 350px;
         object-fit: contain;
       }
 
@@ -70,8 +70,6 @@ nav {
         font-style: normal;
         text-align: center;
         transition: 0.1s linear;
-        padding: 0;
-        margin: 0;
       }
 
       &:hover {
@@ -81,7 +79,15 @@ nav {
   }
 }
 
-.section1 { width: 100%; }
+.section1 {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
 
 .section2 { width: 100%; }
 
@@ -133,12 +139,6 @@ a {
     color: black;
     &:hover { color: $orange; }
   }
-}
-
-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
 }
 
 @media screen and (min-width: 750px) {

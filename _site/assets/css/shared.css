@@ -13,12 +13,13 @@ nav a.selected-orange { color: #FBBA7B; }
 
 .flex { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .flex.logo { flex-direction: column; position: fixed; top: 0px; right: 0px; padding: 2%; }
-.flex.shop .product { padding: 2%; }
-.flex.shop .product img { max-width: 400px; max-height: 400px; object-fit: contain; }
-.flex.shop .product p { color: black; font-family: "Karla", sans-serif; font-style: normal; text-align: center; transition: 0.1s linear; padding: 0; margin: 0; }
+.flex.shop .product { padding: 5%; }
+.flex.shop .product img { max-width: 350px; max-height: 350px; object-fit: contain; }
+.flex.shop .product p { color: black; font-family: "Karla", sans-serif; font-style: normal; text-align: center; transition: 0.1s linear; }
 .flex.shop .product:hover p { color: #FFC5CE; }
 
 .section1 { width: 100%; }
+.section1 img { width: 100%; height: 100vh; object-fit: cover; }
 
 .section2 { width: 100%; }
 
@@ -44,8 +45,6 @@ a.pink { color: black; }
 a.pink:hover { color: #FFC5CE; }
 a.orange { color: black; }
 a.orange:hover { color: #FBBA7B; }
-
-img { width: 100%; height: 100vh; object-fit: cover; }
 
 @media screen and (min-width: 750px) { .container { margin: 6% 12%; }
   .container p.about { font-size: 72px; }
