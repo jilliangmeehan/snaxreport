@@ -176,9 +176,24 @@ a {
   }
 
   // Product page
-  .flex { flex-direction: row; }
   .section1 { width: 40%; }
   .section2 { width: 60%; }
   .description { max-width: 350px; }
   .button { padding: 0 0 5% 5%; }
+  .flex {
+    flex-direction: row;
+    &.printful {
+      margin: 2% auto;
+      .section1 {
+        width: auto;
+        img {
+          max-width: 350px;
+          max-height: 350px;
+          object-fit: contain;
+          margin: 5%;
+        }
+      }
+    }
+  }
+
 }
