@@ -7,18 +7,3 @@
   img: assets/images/i1pdf_square.png
   price: $10
   url: /pdf
-
-- name: Logo hat
-  img: assets/images/hat.png
-  price: $20
-  url: /hat
-
-- name: Embroidered sweatshirt
-  img: assets/images/sweatshirt.png
-  price: $28
-  url: /sweatshirt
-
-- name: Embroidered hoodie
-  img: assets/images/hoodie.png
-  price: $30
-  url: /hoodie
