@@ -77,6 +77,16 @@ nav {
       }
     }
   }
+
+  &.printful {
+    .section1 {
+      img {
+        max-width: 350px;
+        max-height: 350px;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 .section1 {
