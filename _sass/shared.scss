@@ -120,7 +120,11 @@ nav {
   font-size: $medium;
 }
 
-.button { padding: 0 0 15% 5%; }
+.button {
+  display: block;
+  text-align: left;
+  padding: 0 0 15% 5%;
+}
 
 .teal { color: $teal; }
 .pink { color: $pink; }
