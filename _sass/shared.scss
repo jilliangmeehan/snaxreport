@@ -166,6 +166,7 @@ a {
 
   // Shop page
   .flex {
+    flex-wrap: wrap;
     &.shop {
       .product {
         padding: 5%;
