@@ -17,6 +17,8 @@ nav a.selected-orange { color: #FBBA7B; }
 .flex.shop .product img { max-width: 350px; max-height: 350px; object-fit: contain; }
 .flex.shop .product p { color: black; font-family: "Karla", sans-serif; font-style: normal; text-align: center; transition: 0.1s linear; }
 .flex.shop .product:hover p { color: #FFC5CE; }
+.flex.printful .section1 { width: 100%; }
+.flex.printful .section1 img { width: 100%; height: 100%; object-fit: contain; }
 
 .section1 { width: 100%; }
 .section1 img { width: 100%; height: 100vh; object-fit: cover; }
@@ -29,7 +31,11 @@ nav a.selected-orange { color: #FBBA7B; }
 
 .medium { font-weight: 700; font-size: 28px; }
 
-.button { padding: 0 0 15% 5%; }
+.button { display: block; padding: 0 0 15% 5%; }
+
+.size-guide { font-family: "Karla", sans-serif; margin: 5%; overflow-x: auto; }
+.size-guide table { margin-bottom: 40px; }
+.size-guide table tr, .size-guide table td { padding: 8px; }
 
 .teal { color: #00D9DA; }
 
@@ -48,13 +54,19 @@ a.orange:hover { color: #FBBA7B; }
 
 @media screen and (min-width: 750px) { .container { margin: 6% 12%; }
   .container p.about { font-size: 72px; }
-  .flex.shop .product { padding: 5%; }
+  .flex { flex-wrap: wrap; }
+  .flex.shop .product { padding: 3%; }
   .flex.shop .product p { margin-top: 2%; }
-  .flex { flex-direction: row; }
   .section1 { width: 40%; }
   .section2 { width: 60%; }
   .description { max-width: 350px; }
-  .button { padding: 0 0 5% 5%; } }
+  .button { padding: 0 0 5% 5%; }
+  .flex { flex-direction: row; justify-content: center; }
+  .flex.printful { margin: 2% auto; }
+  .flex.printful .section1 { width: auto; }
+  .flex.printful .section1 img { max-width: 500px; max-height: 500px; object-fit: contain; margin: 5%; }
+  .flex.printful .section2 { width: auto; margin: 8% 5%; }
+  .flex.printful .section2 .medium { font-size: 20px; } }
 header p { font-family: "Karla"; font-weight: 700; display: inline; font-size: 42px; line-height: 60%; }
 header p.s { color: #00D9DA; animation: blinkingTeal 4s infinite; }
 header p.n { color: #FFC5CE; animation: blinkingPink 4s infinite 1s; }

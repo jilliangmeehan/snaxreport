@@ -125,6 +125,18 @@ nav {
   padding: 0 0 15% 5%;
 }
 
+.size-guide {
+  font-family: $sans-serif;
+  margin: 5%;
+  overflow-x: auto;
+  table {
+    margin-bottom: 40px;
+    tr, td {
+      padding: 8px;
+    }
+  }
+}
+
 .teal { color: $teal; }
 .pink { color: $pink; }
 .orange { color: $orange; }
@@ -169,7 +181,7 @@ a {
     flex-wrap: wrap;
     &.shop {
       .product {
-        padding: 5%;
+        padding: 3%;
         p { margin-top: 2%; }
       }
     }
@@ -182,18 +194,23 @@ a {
   .button { padding: 0 0 5% 5%; }
   .flex {
     flex-direction: row;
+    justify-content: center;
     &.printful {
       margin: 2% auto;
       .section1 {
         width: auto;
         img {
-          max-width: 350px;
-          max-height: 350px;
+          max-width: 500px;
+          max-height: 500px;
           object-fit: contain;
           margin: 5%;
         }
       }
+      .section2 {
+        width: auto;
+        margin: 8% 5%;
+        .medium { font-size: 20px; }
+      }
     }
   }
-
 }
